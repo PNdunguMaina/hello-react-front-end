@@ -54,8 +54,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 hello_react_front_end <a name="about-project"></a>
 
-> I set up a project as one app with Webpack by implementing a connection between a Ruby on Rails back-end and React front-end. 
-
+> A React app for UI and gets data from api exposed by Rails app 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
