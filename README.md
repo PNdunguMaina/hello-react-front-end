@@ -23,7 +23,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
@@ -38,17 +38,12 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -57,58 +52,37 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 hello_react_front_end <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+> I set up a project as one app with Webpack by implementing a connection between a Ruby on Rails back-end and React front-end. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
-  <summary>Client</summary>
+  <summary>Languages</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiMv42llPn7AhUETKQEHcqJBGYQFnoECAsQAQ&url=https%3A%2F%2Fwww.javascript.com%2F&usg=AOvVaw2t3n3FoztAEJ6zUU6XdzS5">Javascript</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Frameworks</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://reactjs.org/">React</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiHx8rTkvn7AhUOyxoKHf-QBMoQFnoECA8QAQ&url=https%3A%2F%2Fredux.js.org%2F&usg=AOvVaw2uWo8dr3-4vv1B3bbPtcu9">Redux</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+  <summary>Tools & Methods</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://git-scm.com/">Git</a></li>
+    <li><a href="https://github.com/">Github</a></li>
   </ul>
 </details>
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,115 +90,49 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
+ 
+ - Install [React](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj-ivabk_n7AhUSxIUKHX6RBtgQFnoECBIQAQ&url=https%3A%2F%2Freactjs.org%2Fdocs%2Fgetting-started.html&usg=AOvVaw2ELKlyujw4msP4lLpv0rOd)
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+  - cd my-folder
+  - git clone https://github.com/PNdunguMaina/hello-react-front-end.git
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+  - cd hello_react_front_end
+  - npm install
 
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project on the server, execute the following command:
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  - npm start
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Patrick Maina**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@PNdunguMaina](https://github.com/PNdunguMaina)
+- LinkedIn: [Patrick Maina](https://www.linkedin.com/in/pndungumaina/)
+- Twitter: [@ndunguwamaina_](https://twitter.com/ndunguwamaina_)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -241,10 +149,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,25 +157,10 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to acknowledge:
+- [Microverse](https://www.microverse.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
