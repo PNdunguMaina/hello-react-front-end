@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -9,15 +10,17 @@ const initialState = {
 };
 
 // function that generates pending, fulfilled and rejected action types
-const fetchGreetings = createAsyncThunk('greeting/fetchGreetings', () => {
-  return axios
+const fetchGreetings = createAsyncThunk('greeting/fetchGreetings', () =>
+  // eslint-disable-next-line implicit-arrow-linebreak
+  axios
     .get('http://127.0.0.1:3000/api/v1/messages/greetings/random', {
       method: 'GET',
       mode: 'cors',
       headers: { 'Content-Type': 'application/json' },
     })
-    .then((response) => response.data.greeting);
-});
+    .then((response) => response.data.greeting),
+// eslint-disable-next-line function-paren-newline
+);
 
 const greetings = createSlice({
   name: 'greeting',

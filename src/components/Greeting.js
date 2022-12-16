@@ -8,11 +8,12 @@ function Greeting() {
   useEffect(() => {
     dispatch(fetchGreetings());
   }, [dispatch]);
-  return(<div>
-    <h2>Heading</h2>
-    <h1>{greeting}</h1>
+  return (
+    <div>
+      <h2>Heading</h2>
+      <h1>{greeting}</h1>
     </div>
-  )
+  );
 }
 
 export default Greeting;
