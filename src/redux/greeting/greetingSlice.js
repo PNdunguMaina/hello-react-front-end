@@ -17,7 +17,13 @@ export default function greetingsReducer(state = initialState, action) {
 
 export function fetchGreeting() {
   return async (dispatch) => {
-    const responseData = await fetch('/api/v1/messages/greetings/random');
+    const responseData = await fetch('/api/v1/messages/greetings/random', {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
     const data = await responseData.json();
 
     dispatch({
