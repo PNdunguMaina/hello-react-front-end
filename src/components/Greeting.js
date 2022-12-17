@@ -12,11 +12,12 @@ function Greeting() {
   return (
     <div className="container py-5 g-3">
       <Link to="/" className="btn-primary btn">
-        <i className="fa fa-arrow-left" aria-hidden="true"></i>
+        <i className="fa fa-arrow-left" aria-hidden="true" />
       </Link>
 
       <h2 className="mt-3">{greetings}</h2>
       <button
+        type="button"
         className="btn btn-success"
         onClick={() => {
           dispatch(fetchGreeting());

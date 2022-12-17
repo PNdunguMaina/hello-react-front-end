@@ -2,7 +2,7 @@
 const FETCH_GREETING = 'FETCH_GREETING';
 
 // initialize state
-let initialState = 'Hello, world!';
+const initialState = 'Hello, world!';
 
 // reducer function
 export default function greetingsReducer(state = initialState, action) {
