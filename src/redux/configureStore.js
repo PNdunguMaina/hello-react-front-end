@@ -1,13 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
-import greetingReducer from './greeting/greetingSlice';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import greetingsReducer from './greeting/greetingSlice';
 
 const rootReducer = combineReducers({
-  greeting: greetingReducer,
+  greetings: greetingsReducer,
 });
 
 const store = configureStore({
   reducer: rootReducer,
+  middleware: [thunk, logger],
 });
 
 export default store;

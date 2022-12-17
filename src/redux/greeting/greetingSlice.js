@@ -1,46 +1,34 @@
-/* eslint-disable no-param-reassign */
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+// action
+const FETCH_GREETING = 'FETCH_GREETING';
 
 // initialize state
-const initialState = {
-  loading: false,
-  greeting: 'Hello, World!',
-  err: '',
-};
+const initialState = 'Hello, world!';
 
-// function that generates pending, fulfilled and rejected action types
-const fetchGreetings = createAsyncThunk('greeting/fetchGreetings', () =>
-  // eslint-disable-next-line implicit-arrow-linebreak
-  axios
-    .get('http://127.0.0.1:3000/api/v1/messages/greetings/random', {
+// reducer function
+export default function greetingsReducer(state = initialState, action) {
+  switch (action.type) {
+    case FETCH_GREETING: {
+      return action.payload;
+    }
+    default:
+      return state;
+  }
+}
+
+export function fetchGreeting() {
+  return async (dispatch) => {
+    const responseData = await fetch('/api/v1/messages/greetings/random', {
       method: 'GET',
       mode: 'cors',
-      headers: { 'Content-Type': 'application/json' },
-    })
-    .then((response) => response.data.greeting),
-// eslint-disable-next-line function-paren-newline
-);
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    const data = await responseData.json();
 
-const greetings = createSlice({
-  name: 'greeting',
-  initialState,
-  extraReducers: (builder) => {
-    builder.addCase(fetchGreetings.pending, (state) => {
-      state.loading = true;
+    dispatch({
+      type: FETCH_GREETING,
+      payload: data.greeting,
     });
-    builder.addCase(fetchGreetings.fulfilled, (state, action) => {
-      state.loading = false;
-      state.greeting = action.payload;
-      state.err = '';
-    });
-    builder.addCase(fetchGreetings.rejected, (state, action) => {
-      state.loading = false;
-      state.greeting = '';
-      state.err = action.error.message;
-    });
-  },
-});
-
-export default greetings.reducer;
-export { fetchGreetings };
+  };
+}

@@ -1,17 +1,30 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchGreetings } from '../redux/greeting/greetingSlice';
+import { Link } from 'react-router-dom';
+import { fetchGreeting } from '../redux/greeting/greetingSlice';
 
 function Greeting() {
-  const greeting = useSelector((state) => state.reducer);
+  const greetings = useSelector((state) => state.greetings);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchGreetings());
+    dispatch(fetchGreeting());
   }, [dispatch]);
   return (
-    <div>
-      <h2>Heading</h2>
-      <h1>{greeting}</h1>
+    <div className="container py-5 g-3">
+      <Link to="/" className="btn-primary btn">
+        <i className="fa fa-arrow-left" aria-hidden="true" />
+      </Link>
+
+      <h2 className="mt-3">{greetings}</h2>
+      <button
+        type="button"
+        className="btn btn-success"
+        onClick={() => {
+          dispatch(fetchGreeting());
+        }}
+      >
+        Show Greeting
+      </button>
     </div>
   );
 }
