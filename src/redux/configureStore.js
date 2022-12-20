@@ -2,10 +2,10 @@ import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import greetingsReducer from './greeting/greetingSlice';
+import greetingsSlice from './greeting/greetingReducer';
 
 const rootReducer = combineReducers({
-  greetings: greetingsReducer,
+  greetings: greetingsSlice,
 });
 
 const store = configureStore({

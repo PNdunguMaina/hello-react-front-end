@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchGreeting } from '../redux/greeting/greetingSlice';
+import { fetchGreetings } from '../redux/greeting/greetingReducer';
 
 function Greeting() {
   const greetings = useSelector((state) => state.greetings);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchGreeting());
+    dispatch(fetchGreetings());
   }, [dispatch]);
   return (
     <div className="container py-5 g-3">
@@ -20,7 +20,7 @@ function Greeting() {
         type="button"
         className="btn btn-success"
         onClick={() => {
-          dispatch(fetchGreeting());
+          dispatch(fetchGreetings());
         }}
       >
         Show Greeting
